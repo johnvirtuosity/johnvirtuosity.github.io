@@ -7,27 +7,27 @@
         /*not used yet*/
         display:inline-block;
       }
-      #logo{
+      .logo{
         float:left;
       }
-      #search{
+      .search{
         float: right; 
         border: solid 1px;  
         width: 20%; 
         height: 30px;
       }
-      #content{
+      .content{
         clear: both; 
         width: 100%;
       }
       
-      #posts{
+      .posts{
         float: right;
         width: 65%;
         border: solid 1px;
       }
 
-      #left-sidebar{
+      .left-sidebar{
         float: left;
         width: 25%;
         border: solid 1px;
@@ -35,18 +35,18 @@
         height: 200px;
       }
 
-      #menu{
+      .menu{
         border: solid 1px;
         width: 80%;
       }
 
-      #media{
+      .media{
         border: solid 1px;
         position: absolute;
         bottom: -100%;
       }
 
-      #footer{
+      .footer{
         clear: both;
         border: solid 1px;
         width: 100%;

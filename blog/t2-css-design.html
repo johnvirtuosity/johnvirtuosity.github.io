@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+
+  <HEAD>
+    <title>Blog Template</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+      
+  </HEAD>
+
+  <body>
+    <div>
+      <div id="logo">
+          <img src="http://www.virtuositynz.com/assets/images/virtuosity/virtuosityAlive.gif"/>
+        </div>
+
+        <div id="search">
+          <p>Search goes here</p>
+       </div>
+    </div>
+
+
+    <div id="content">
+      <hr>
+      <div id="left-sidebar">
+        <div id="menu">
+          <h2>Other Blogs</h2>
+          <ol>
+          	<li>Music</li>
+          	<li>Sports</li>
+          	<li>People</li>
+          </ol>
+        </div>
+        <div id="media">
+          <p>social media links here...</p>
+        </div>        
+      </div>
+      <div id="posts">
+        <p>Posts</p><br>
+        <article><h2>What are the best practices associated with using classes vs. ids?</h2><br>
+        	<p>In using a common CSS makes layout and formatting of your website pages, especially if it has more than one page or has a complex layout or formatting.</p><br>
+          <p>This is because if you have uniform styles for the content of the website but things like text size,emphasis like bold, italic and other styling options you may want to use need to be applied in the web page at the point they occur.</p><br>
+          <p>This is not a problem per se if the website doe's not change or change often, but presents extra effort where the change applies to multiple parts of the page content. So for example you use a particular style for paragraphs for technical details and there are several places and many pages where technical details are present. The way you would normally apply the change is to find every paragraph and every page technical content is present that the current style was applied to and update the style for each paragraph. This task would involve alot effort applying the same change, just to different parts of the website.</p><br>
+          <p>Thanks to CSS, there is a more efficient way to manage the application and updating of styles and layout in your website.</p><br>
+          <p>We can use class'es and id's to act as identifiers for elements that are to have the same type of formatting or positioning, across your website. These identifiers are added to the content tags where appropriate.
+          </p><br>
+          <p>If we use the example from above where technical content all have the same style, then it might look something like this,
+            </p>
+              <code> if it were a class &ltp class="technical_content"> Some technical text&lt/p&gt
+
+                or if were an id
+                &ltp id="technical_content"> Some technical text&ltp&gt</code>
+            <p>, in our CSS We would have an entry that defined the "technical_content" class, something like this..
+          </p><br>
+          <code> <p>The '.' is used to prefix the class in the CSS
+            .technical_content{ font-family: Arial; font-style: italic;}</p>
+
+            the '#' is used to prefix id's in the CSS
+            #technical_content{ font-family: Arial; font-style: italic;}
+          </code>
+          <p>We add the .technical_content class to any/every paragraph that contains technical content, this will format each of those the same way now as it was before. The big difference now is that if we want to make changes to the technical content style in future we only have to make the change in the technical_content class definition in our CSS and magically the new styling is applied everywhere this class was applied.</p><br>
+          <p>Classes and id's are both used to identify web page elements the key difference and reason for choosign the right one to use or define is whether or not the attributes you are wanting to apply is used only once on the web page or more than once. A particular class can be used more than once on a web page. An id can only be used once on each web page.Each page will only have one footer, one header, one search element so these would be best defined using id's, many elements of your page though may be the same font family, might be italic, might be centered so these elements would be best defined using class'es</p><br>
+          <p>id's are unique in a page, there is only one of you, many people can belong to a class, many people have black hair, many people wear glasses.</p> 
+          <p>I would see the primary way I would use hashes and arrays is for ordering lists, searching for specific elements, and generally holding set's of elements, that may or may not be related.</p>
+        </article>
+      </div>
+    </div>
+
+    <hr>
+
+    <div  id="footer">
+      <hr>
+      <footer>
+        <p>Footer aknowledgments etc.</p>
+      </footer>
+    </div>
+
+  </body>
+
+</html>

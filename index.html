@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html>
+	
 	<HEAD>
+		<link type="text/css" rel="stylesheet" href="stylesheets/solo-stylesheet.css"/>
 		<title class="page_title">Virtuosity Limited (NZ)</title>
 	</HEAD>
 	<body>
-		<div style="border: 1px solid; display: inline-block; height: 100px; position: relative;"><!--The logo Div here -->
-			<img src="http://www.virtuositynz.com/assets/images/virtuosity/virtuosityAlive.gif" Alt="Virtuosity Limited (NZ)"/>
-		</div>
-		<div style="border: 0 solid; display: inline-block; height: 100px; width: 80%;"><!--The right-hand header div here. This will contain the vertical menu and search element-->
-			<div style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: 20%; position: relative; left: 80%;  background-color: orange; padding: 3px"><!--Search element here. Top-right of header div-->
-				Search here...
-			</div><p></p><p></p>
-			<div style="border: 0 solid; width: 100%; position: relative; top: 45%; padding: 3px;"><!--Vertical menu bar here bottom of header div-->
+		<div>
+			<div id="logo"><!--The logo Div here -->
+				<img src="http://www.virtuositynz.com/assets/images/virtuosity/virtuosityAlive.gif"/>
+			</div>
+			
+			<div id="search"><!--Search element here. Top-right of header div-->
+				<p>Search here...</p>
+			</div>
+
+			<div id="vertmenu"><!--horizontal menu bar here bottom of header div-->
 				<div style="padding: 3px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; text-align: center; background-color: yellow; border: 1px solid; display: inline-block; width: 15%">home</div>
 				<div style="padding: 3px; text-align: center; background-color: yellow; border: 1px solid; display: inline-block; width: 15%">services</div>
 				<div style="padding: 3px; text-align: center; background-color: yellow; border: 1px solid; display: inline-block; width: 15%">portfolio</div>
 				<div style="padding: 3px; text-align: center; background-color: yellow; border: 1px solid; display: inline-block; width: 15%">contact us</div>
 				<div style="padding: 3px; text-align: center; background-color: yellow; border: 1px solid; display: inline-block; width: 15%">about</div>
-				<div style="padding: 3px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; text-align: center; background-color: yellow; border: 1px solid; display: inline-block; width: 15%">blog</div>
-			</div>
+				<a href="blog/blog-index.html"><div style="padding: 3px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; text-align: center; background-color: yellow; border: 1px solid; display: inline-block; width: 15%">blog</div></a>
+			</div>		
+		</div>	
+		
+		<div id="content">			
+			<div id="left-sidebar">
+				<div id="menu">
+		          <h2>side-bar menu</h2>
+		          <p>home</p>
+		          <p>services</p>
+		          <p>portfolio</p>
+		          <p>contact us</p>
+		          <p>about</p>
+		        </div>
+		    </div>
+			<div id="posts">Main body content here...</div>
+			<div id="right-sidebar">
+				<div id="quicklinks">
+		          <p>quick links</p>
+		        </div>
+		        <div id="video">
+		          <p>Video...</p>
+		        </div>
+		    </div>
 		</div>
-
-		<p style="border: 1px inset"><!-- <hr>-less horizontal line --></p>
-		<div style="border: solid 1px; height: 200px; width: 15%; display: inline-block; position: relative;">left-hand vertical menu</div>
-		<div style="border: solid 1px; height: 400px; width: 70%; display: inline-block; position: relative;">Main body content here...</div>
-		<p style="border: 1px inset"><!-- <hr>-less horizontal line --></p>
-		<div>footer here...</div>
+		<div id="footer">footer here...</div>
 	</body>
 </html>

@@ -9,11 +9,11 @@
 
   <body>
     <div>
-      <div class="inline" id="logo">
+      <div id="logo">
           <img src="#" />
         </div>
 
-        <div class="inline" id="search">
+        <div id="search">
           <p>Search goes here</p>
        </div>
     </div>
@@ -21,7 +21,7 @@
 
     <div id="content">
       <hr>
-        <div id="menu"  class="inline">
+        <div id="menu">
           <h2>Other Blogs</h2>
           <ol>
           	<li>Music</li>
@@ -30,13 +30,35 @@
           </ol>
         </div>
 
-        <div id="posts"  class="inline">
+        <div id="posts">
           <p>All posts go here</p>
           <article><h2>Array's vs Hashes</h2>
-          	<p>An arrays is a indexed collection of elements. The elements can be all of any type of object, like strings, numbers, but could be other type of objects also. Arrays are indexed by sequential numbers only enabling you to refer to the element by its index number. Imagine series of numbered boxes, each box holding word. If you wanted to know what the word in box number 3 is you would, in english say 'tell me what is in box number 3', simple enough. You can refer to any of the boxes by their box number.</p>
-            <p>A hash, is also a collection of elements. The elements can also be any type of object. The elements in a hash though consist of the object to be stored as well as a key element. Hashes store things in pairs, the pair consisting of a key and the object.</p>
-            <p>The primary difference with array's and hashes is that with a hash you can choose yourself what you want the indexed key to be, that being the first element of the pair, whereas an with an array the index number is assigned to the object to be stored when it is added the array.</p>
-            <p>The best way to </p>
+          	<p>An array is a indexed collection of elements. The elements can be all of any type of object, strings, numbers but could be other type of objects also. Arrays are indexed by sequential numbers only, enabling you to refer to the element by its index number. Imagine series of numbered boxes, each box holding word. If you wanted to know what the word in box number 3 is you would, in english say 'tell me what is in box number 3', simple enough. You can refer to any of the boxes by their box number.</p>
+            <p>A hash, is also a collection of elements. The elements can also be any type of object like an array. The elements in a hash though consist of the object to be stored as well as a key element. Hashes store things in pairs, the pair consisting of a key and the object.</p>
+
+            <p>Both array's and hashes are structures for storing set's of objects that can referenced by their key</p>
+
+            <p>The primary difference with array's and hashes is that with a hash you can choose yourself what you want the indexed key to be, it could be anything but the best for it, in my view would be to have the key identify the type of object the key relates to, for example a hash pair might , that being the first element of the pair, whereas an with an array the index number is assigned to the object to be stored when it is added the array.</p>
+
+            <p>Some articles state it is more efficient accessing array elements, but hashes are more flexible due to the ability to assign the key of the object yourself. But I have found other articles that state hashes are more efficient thn array's. May have to get clarification on this point.</p>
+
+            <p>Some example's of the use of arrays and hashes</p>
+            <p>creating array named my_array and populating it with "dog","cat","rabbit","bird","fish". The order of the elements in the array are in the same order they appear between the brackets.
+              So "dog" is the first array element, "cat" the second and so on.</p>
+            <code>
+              my_array = ["dog","cat","rabbit","bird","fish"]
+            </code>
+            <p>To access the array elements you just use an integer that refers to the elements order when the array was created or defined.</p>
+            <code>
+              examples of how to access array elements
+              my_array[2] would give you "cat" (accessing the 2nd array element)
+              my_array[4] would give you "bird" (accessing the 4th array element)
+              </code>
+
+              <p>To set or change array elements use the following syntax</p>
+              <code>my_array[1] = "rat" (sets the first array element to "rat", this will overwrite "dog" in this case
+                my_array[3] = "pig" (sets the third array element to "pig", this will overwrite "rabbit")
+              </code>
           </article>
           
         </div>

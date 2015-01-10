@@ -3,31 +3,54 @@
         margin:0;
         padding: 0;
       }
+
+article {
+  border: solid 1px;
+  border-top-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+
+  margin: 10px;
+  width: 70%;
+}
+
+article:hover {
+  background-color: #979995;
+}
+
       .inline{
         /*not used yet*/
         display:inline-block;
       }
+
       #logo{
         float:left;
+        margin: 5px;
       }
+
       #search{
         float: right; 
         border: solid 1px; 
         background-color: #979995; 
         width: 20%; 
-        height: 30px; 
+        height: 10px; 
+        margin: 5px;
+        padding: 10px;
         border-top-left-radius: 10px; 
         border-bottom-right-radius: 10px;
       }
+
       #content{
         clear: both; 
         width: 100%;
       }
       
       #posts{
-        float: right;
+        float: left;
         width: 65%;
+        height: 600px;
         border: solid 1px;
+        margin: 5px;
+        padding: 10px;
         background-color: #A3C0C2;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -35,8 +58,10 @@
 
       #left-sidebar{
         float: left;
-        width: 25%;
+        width: 10%;
         border: solid 1px;
+        margin: 5px;
+        padding: 10px;
         position: relative;
         height: 200px;
         background-color: #FFD097;
@@ -44,9 +69,54 @@
         border-bottom-right-radius: 10px;
       }
 
+      #right-sidebar{
+        float: left;
+        width: 15%;
+        /*border: solid 1px;*/
+        margin: 5px;
+        padding: 10px;
+        position: relative;
+        /*background-color: #FFD097;*/
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
       #menu{
+        /*border: solid 1px;*/
+        width: 100%;
+        float:top;
+      }
+
+      #menu:hover{
+        background-color: #979995;
+      }
+
+      #quicklinks{
         border: solid 1px;
+        float: bottom;
+        height: 200px;
+        background-color: #FFD097;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      #video{
+        border: solid 1px;
+        float: bottom;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top: 10px;
+      }
+
+      #vertmenu{
+        clear: both;
+        border: 0 solid;
         width: 80%;
+        position: relative;
+        top: 45%;
+        padding: 3px;
       }
 
       #media{
@@ -59,4 +129,10 @@
         clear: both;
         border: solid 1px;
         width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .li_noindicator{
+        list-style-image: none;
       }

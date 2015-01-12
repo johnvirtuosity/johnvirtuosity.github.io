@@ -1,0 +1,27 @@
+/* include your css here */
+*{
+    margin: 0;
+    padding: 0;
+}
+div {
+    width: 45%;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.question{
+    float: left;
+}
+.answer {
+    float: left;  
+}
+
+header div {
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+	margin: 0;
+	padding: 0 0 0 10px;
+}

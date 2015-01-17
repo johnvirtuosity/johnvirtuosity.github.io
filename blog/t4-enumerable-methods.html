@@ -47,6 +47,7 @@
           </p>
 
           <p>Here are some example's of the '#map' method...</p>
+          <br>
           <code>
               original_array = [1, 2, 3, 4, 5, 6]
               new_array = Array.new()
@@ -55,10 +56,12 @@
 
               new_array now contains [1, 4, 9, 16, 25, 36]
           </code>
+          <br>
 
           <p>Enumerable#group_by is another one of the methods 'Enumerable' can perform. #group_by, takes an array and using the grouping defined in the 'block' groups the values and returns a hash table with the array values now groupedf, with the key displaying the group value.</p>
 
           <p>Here are some example's of the '#group_by' method...</p>
+          <br>
           <code>
               original_array = [1, 2, 3, 4, 5, 6]
               new_hash = Hash.new()
@@ -68,9 +71,11 @@
               new_hash now contains {true=>[5, 1, 3], false=>[4, 6, 2]}
               the array values are now grouped by whether or not they were odd numbers, this was defined in the block by the 'v.odd?' 
           </code>
+          <br>
           <p>Enumerable#cycle is yet another one of the methods 'Enumerable' can perform. The #cycle method takes an array and returns the array value by value as many time's as is defined when the #cycle method is called. 
           </p>
           <p>Here are some example's of the '#cycle' method...</p>
+          <br>
           <code>
               original_array = [a,b,c,1,2,3]
 
@@ -78,6 +83,7 @@
 
               would return a,b,c,1,2,3,a,b,c,1,2,3 (original array cycled through 2 times each time returning each value in the array)
           </code>
+          <br>
           <p>The chaining or combination of methods enables you to complete very complex array or list manipulation and filtering if needed.</p>
 
         </article>

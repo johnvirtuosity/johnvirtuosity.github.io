@@ -38,8 +38,13 @@
         <p>Posts</p>
         <article><h2>Classes - huh! what are they good for!!.. Absolutely everything!..</h2>
         	<p>
-            Classes, in programming are used in the object-oriented programming style. They are a construct that group's the actions that a class can perform along with the data (attributes or properties that tell us something about the class) that the actions are performed on. This is called 'encapsulation'. This encapsulation, means we don't have methods and attributes for the same object spread all over the place in your code. This makes for easier maintenance and eliminates duplication of code amongst other things.
-          </p>         
+            Classes, in programming are used in the object-oriented programming style.
+            </p>
+            <br>
+            <p>They are a construct that group's the actions that a class can perform along with the data (attributes or properties that tell us something about the class) that the actions are performed on. This is called 'encapsulation'. This encapsulation, means we don't have methods and attributes for the same object spread all over the place in your code. This makes for easier maintenance and eliminates duplication of code amongst other things.
+          </p>
+
+          <br>         
 
           <p>
             If we consider we a house as a class, then each house is an 'instance' of the class of houses. When a house is built, it shares many common traits and behaviours and physical attributes, not necessarily each one identical to another house but often very similar.
@@ -47,25 +52,26 @@
           Let's take this analogy further then, physical attributes relate to the attributes and properties of a class, so front door, back door, kitchen tap, exterior colour, flooring, number of toilets, stove, includes a bath, includes a shower etc. Attributes are what defines it's state or appearance to the outside world.
 
           The house's behaviours, might be 'turn on kitchen tap', 'open front door', 'close back door', 'turn on shower', 'vacuum carpet', 'mop floor' etc. So our behaviours are 'actions' we can perform. These 'actions' relate to the 'methods' of a class</p>
+          <br>  
 
           <p>
             When you want to use a class, you first of all need to create an 'instance' of the class. The class serves as a template for the instance of the class. In our example this would be building our house based on it's plans or blue-print.
           </p>
-
+          <br>  
           <p>
             The great thing about classes is that they enable you to create a template for the object you want to model and from then on make copies from that template. This is called 'inheritance'. This eliminates or reduces much duplication of code as when you want to change an attribute or method for all instances of a class, you just need to make the change in the class, and when instances are created they all inherit that change. No need to make the change in each instance manually.
           </p>
-
+          <br>  
           <p>
             Why aren't classes just used everywhere then ?. The use of classes may require a bit more planning up front, on the drawing up of plans, confirming what the features of the house will be ensuring the placement of utilities make the building of the house as simple as possible, and taking into account what might be needed in future if the house is to be extended or mofified in some way. If we compare this to the effort and planning that might go into building a garden shed or some such smaller structure, this may be seen as more effort than is required to achieve the desired result, the difference may be seen when modifications or extension is required for the garden shed. These most often will just be banged together, which may not produce the most efficient shed from the gardeners perspective.
 
             As the extensions and changes to the house scale that's when the extra work up front will come into it's own by enabling complex extensions and changes to the building structure to be more easily implemented, maintained and further scaled up.
           </p>
-
+          <br>  
           <p>
             Let's look further now at creating my house class. 
           </p>
-
+          <br>  
           <p>
             class house
               'define some attributes for the house class'
@@ -119,6 +125,7 @@
               end
             end
           </p>
+          <br>  
           <p>
             Now that we have a class that we can base an instance of a house from the next thing we need to do is to create the instance,
 
@@ -134,14 +141,15 @@
             Let's check the state of the front door again
             print my_house.front-door would display 'open' now.
           </p>
+          <br>  
           <p>
             Using this house class, I can now create lots of different house's that are similar, but each one can be independantly controlled and each with their own set of attributes that can only be updated or changed by the methods in the instance.
           </p>
-
+          <br>  
           <p>
             The instance variables/attributes can only be updated by the methods of the instance, which were inherited from the house class. The encapsulation of the attributes and the methods that work upon these attributes mean anything to do with the houses door's stove, taps etc, can only be made by making a call to the methods of the instance. This means that no other class can be created that can make changes to the atributes of the house class without the house class knowing about it and more importantly being in control of that change.
           </p>  
-
+          <br>  
           <p>
             I am working on creating a working example of my 'house' class, virtual as it may be..Watch this space...
           </p>  

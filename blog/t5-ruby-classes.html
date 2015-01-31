@@ -63,7 +63,7 @@
           </p>
           <br>  
           <p>
-            Why aren't classes just used everywhere then ?. The use of classes may require a bit more planning up front, on the drawing up of plans, confirming what the features of the house will be ensuring the placement of utilities make the building of the house as simple as possible, and taking into account what might be needed in future if the house is to be extended or mofified in some way. If we compare this to the effort and planning that might go into building a garden shed or some such smaller structure, this may be seen as more effort than is required to achieve the desired result, the difference may be seen when modifications or extension is required for the garden shed. These most often will just be banged together, which may not produce the most efficient shed from the gardeners perspective.
+            Why aren't classes just used everywhere then ?. The use of classes may require a bit more planning up front, on the drawing up of plans, confirming what the features of the house will be ensuring the placement of utilities make the building of the house as simple as possible, and taking into account what might be needed in future if the house is to be extended or mofified in some way. If we compare this to the effort and planning that might go into building a garden shed or some such smaller structure, this may be seen as more effort than is required to achieve the desired result, the difference may be seen when modifications or extension is required for the garden shed. These most often will just be banged together, which may not produce the most efficient shed from the gardeners perspective.<br>
 
             As the extensions and changes to the house scale that's when the extra work up front will come into it's own by enabling complex extensions and changes to the building structure to be more easily implemented, maintained and further scaled up.
           </p>
@@ -74,74 +74,74 @@
           <br>  
           <p>
             <code>
-            class house
-              'define some attributes for the house class'
-              attr_reader :front-door, :back-door, :kitchen-tap, :stove
-              :stove{element_1 => off,
-                    element_2 => off,
-                    element_3 => off,
-                    element_4 => off,
-                    oven => off}
+            class house<br>
+              'define some attributes for the house class'<br>
+              attr_reader :front-door, :back-door, :kitchen-tap, :stove<br>
+              :stove{element_1 => off,<br>
+                    element_2 => off,<br>
+                    element_3 => off,<br>
+                    element_4 => off,<br>
+                    oven => off}<br><br>
 
-              def initialize
-                #define the intial states of the attributes
-                @front-door = 'closed'
-                @back-door = 'closed'
-                @kitchen-tap = 'closed'
-                @stove{element_1 => off,
-                        element_2 => off,
-                        element_3 => off,
-                        element_4 => off,
-                        oven => off}
-              end
+              def initialize<br>
+                #define the intial states of the attributes<br>
+                @front-door = 'closed'<br>
+                @back-door = 'closed'<br>
+                @kitchen-tap = 'closed'<br>
+                @stove{element_1 => off,<br>
+                        element_2 => off,<br>
+                        element_3 => off,<br>
+                        element_4 => off,<br>
+                        oven => off}<br>
+              end<br><br>
 
-              def open_front_door
-                some code to open the front-door
-                @front-door = 'open' 
-              end
+              def open_front_door<br>
+                some code to open the front-door<br>
+                @front-door = 'open' <br>
+              end<br>
 
-              def close_front_door
-                some code to close the front-door
-                @front-door = 'closed'
-              end
+              def close_front_door<br>
+                some code to close the front-door<br>
+                @front-door = 'closed'<br>
+              end<br>
 
-              def turn_on_kitchen_tap
-                some code to turn on the kitchen-tap
-                @kitchen-tap = 'running'
-              end
+              def turn_on_kitchen_tap<br>
+                some code to turn on the kitchen-tap<br>
+                @kitchen-tap = 'running'<br>
+              end<br>
 
-              def turn_off_kitchen_tap
-                some code to turn off the kitched-tap
-                @kitchen-tap = 'closed'
-              end
+              def turn_off_kitchen_tap<br>
+                some code to turn off the kitched-tap<br>
+                @kitchen-tap = 'closed'<br>
+              end<br>
 
-              def turn_on_stove_element (which_element)
-                some code to turn on the (which_element)
-                @stove[which_element] = 'on'
-              end
+              def turn_on_stove_element (which_element)<br>
+                some code to turn on the (which_element)<br>
+                @stove[which_element] = 'on'<br>
+              end<br>
 
-              def turn_off_stove_element (which_element)
-                some code to turn off the @stove[which_element]
-                @stove[which_element] = 'off'
-              end
-            end
+              def turn_off_stove_element (which_element)<br>
+                some code to turn off the @stove[which_element]<br>
+                @stove[which_element] = 'off'<br>
+              end<br>
+            end<br>
           </code>
           </p>
           <br>  
           <p>
-            Now that we have a class that we can base an instance of a house from the next thing we need to do is to create the instance,
+            Now that we have a class that we can base an instance of a house from the next thing we need to do is to create the instance,<br><br>
 
-            my_house = house.new
+            my_house = house.new<br><br>
 
-            We can now interact with our new instance, 
-            Let's check to see if the front door is open
-            print my_house.front-door would display 'closed' at this point.
+            We can now interact with our new instance, <br>
+            Let's check to see if the front door is open<br>
+            print my_house.front-door would display 'closed' at this point.<br><br>
 
-            Now lets open the front door.
-            my_house.open_front_door
+            Now lets open the front door.<br>
+            my_house.open_front_door<br><br>
 
-            Let's check the state of the front door again
-            print my_house.front-door would display 'open' now.
+            Let's check the state of the front door again<br>
+            print my_house.front-door would display 'open' now.<br>
           </p>
           <br>  
           <p>

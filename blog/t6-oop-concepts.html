@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html >
+
+  <HEAD>
+    <title>Blog Template</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+      
+  </HEAD>
+
+  <body>
+    <div>
+      <div id="logo">
+          <img src="http://www.virtuositynz.com/assets/images/virtuosity/virtuosityAlive.gif"/>
+        </div>
+
+        <div id="search">
+          <p>Search goes here</p>
+       </div>
+    </div>
+
+
+    <div id="content">
+      <hr>
+      <div id="left-sidebar">
+        <div id="menu">
+          <h2>Other Blogs</h2>
+          <ol>
+          	<li>Music</li>
+          	<li>Sports</li>
+          	<li>People</li>
+          </ol>
+        </div>
+        <div id="media">
+          <p>social media links here...</p>
+        </div>        
+      </div>
+      <div id="posts">
+        <p>How doe's Ruby handle... </p>
+        <article><h2>Variable scope</h2>
+        	<p>
+            Ruby provide's 5 categories of variable scope.<br/>
+            These are ...
+            <ol>
+              <li>global</li>
+              <li>class</li>
+              <li>instance</li>
+              <li>local</li>
+              <li>constant</li>
+            </ol>
+          <p>
+            Global variable's are indentified by the '$' prefix, e.g. $my_variable<br>
+            Their scope is the entire code-space regardless of where they are initially defined. Global variables may have been used for such things like an applications environment variable's where their values were required by any or all part's of an application.
+          </p>
+          <p>
+            Class variables are identified by the '@@' prefix, e.g. @@my_classvariable<br>
+            Their scope is limited to all of the descendant's (instances) of the class. Class variables are very useful for for maintaining values across an entire class. e.g. totals for values that are changed independantly by each instance can be totalled for the entire class via class variables.
+            Class variable's must be initialised before they can be used by methods in a class.
+          </p>
+          <p>
+            This can be shown in the code 1 snippet below. <br>
+            @@myclassvar can be accessed by any/all of the class methods<br>
+            @@myclassvar must be initialised before it is used by methods in the class<br>
+          </p> 
+            code 1.
+            <code>
+              def theclass
+
+                @@myglobalvar = 0
+                
+                def method1
+                  @@myclassvar -= 1
+                end
+
+                def method2
+                  @myvar2 = 'Two'
+                  puts @myvar3
+                end
+
+                def method3
+                  @myvar3 = 3
+
+                  @@myglobalvar += 1
+                end
+              end
+            </code>
+
+          <p>
+            Instance variables are indentified by the '@' prefix, e.g. @my_instancevariable<br>
+            Their scope is limited to their instance only. Instance variables are not available their other instances of their class. Instance variables are accessible to the entire instance, regardless of where in the class they are defined.
+            Instance variables can be initialised the first time they are used
+          </p>
+          <p>
+            This can be shown in the code 2 snippet below. <br>
+            @myvar4 can be accessed by any/all of the class methods<br>
+            @myvar1 can be accessed by any/all of the class methods<br>
+            @myvar1, @myvar2, @myvar3 are all first defined when used in methods. i.e. they did not have to be defined any of the methods first.
+          </p> 
+          <p>
+            code 2.
+            <code>
+              def theclass
+
+                @myvar4 = 4
+                def method1
+                  @myvar1 = 1
+                  puts @myvar4
+                end
+
+                def method2
+                  @myvar2 = 'Two'
+                  puts @myvar 3
+                end
+
+                def method3
+                  @myvar3 = 3
+
+                  puts @myvar4
+                  puts @myvar2
+                end
+              end
+            </code>
+          </p>
+          <p>
+            Local variables are normally begin with a lower-case letter or the '_' symbol. e.g. my_localvariable, or _localvar1.<br>
+            Their scope is limited to the range between the 'class'. 'module', 'def', 'do', to their corresponding 'end', or the range between a blocks curly bracket'{}'.
+            Local variables can be initalised the first time they are used, they do not have to be pre-initialised like class variables.
+          </p>
+          <p>
+            This can be shown in the code 3 snippet below. <br>
+            _localvar1 CANNOT be accessed by any method other than the range between method1 and it's 'end'<br>
+            _localvar1 CAN be accessed by loops within method1 also because it was created before the loop.<br>
+            localvar3 though CANNOT be accessed outside of the loop as it is local to the loop only. So it's scope range is between the 'for pointer in 1..10' and the corresponding 'end' for the loop
+          </p> 
+          <p>
+            code 3.
+            <code>
+              def theclass
+
+                @myvar4 = 4
+                def method1
+                  @myvar1 = 1
+                  _localvar1 = 3
+
+                  for pointer in 1..10
+                    _localvar1 += 1
+
+                    localvar2 += 2
+                  end
+                end
+
+                def method2
+                  @myvar2 = 'Two'
+                  puts @myvar4
+
+                  (1..10).each do |localvar3|
+                    localvar3 += 5
+                  end
+                end
+              end
+            </code>
+          </p>
+          <p>
+            Constants begin with an upper-case letter.<br>
+            If they are defined in a class or module then their scope is limited to the class or modyle. If they are defined outside of a class or module then they cane be accessed globally.
+
+            A constant cannot be defined within a method.
+          </p>
+          <p>
+            This can be shown in the code 4 snippet below. <br>
+          </p> 
+          <p>
+            code 4.
+            <code>
+              def theclass
+                MYCONSTANT1 = 10
+
+                @myvar4 = 4
+                def method1
+                  @myvar1 = 1
+                  _localvar1 = 3
+
+                  for pointer in 1..10
+                    _localvar1 += 1
+
+                    localvar2 += 2
+                  end
+                end
+
+                def method2
+                  @myvar2 = 'Two'
+                  puts @myvar4
+
+                  puts MYCONSTANT1
+                end
+              end
+            </code>
+          </p>
+        </article>        
+      </div>
+    </div>
+
+    <hr>
+
+    <div  id="footer">
+      <hr>
+      <footer>
+        <p>Footer aknowledgments etc.</p>
+      </footer>
+    </div>
+
+  </body>
+
+</html>

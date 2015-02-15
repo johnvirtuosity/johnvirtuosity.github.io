@@ -4,6 +4,10 @@
         padding: 0;
       }
 
+p {
+  padding: 20px;
+}
+
 article {
   border: solid 1px;
   border-top-left-radius: 10px; 

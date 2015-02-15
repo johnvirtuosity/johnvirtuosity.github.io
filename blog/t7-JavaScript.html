@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+
+  <HEAD>
+    <title>Blog Template</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+      
+  </HEAD>
+
+  <body>
+    <div>
+      <div id="logo">
+          <img src="http://www.virtuositynz.com/assets/images/virtuosity/virtuosityAlive.gif"/>
+        </div>
+
+        <div id="search">
+          <p>Search goes here</p>
+       </div>
+    </div>
+
+
+    <div id="content">
+      <hr>
+      <div id="left-sidebar">
+        <div id="menu">
+          <h2>Other Blogs</h2>
+          <ol>
+          	<li>Music</li>
+          	<li>Sports</li>
+          	<li>People</li>
+          </ol>
+        </div>
+        <div id="media">
+          <p>social media links here...</p>
+        </div>        
+      </div>
+      <div id="posts">
+        <p>Posts</p>
+        <article><h2>Looping in Ruby vs. Looping in JavaScript and Ruby hash vs. JavaScript Objects</h2>
+        	<p>JavaScript implements 2 looping constructs. These are 'for' and 'while' loops, there is also a 3rd which is variant of the while loop and that is the 'do..while'<br>
+            Ruby implements 3. These include for , while, and until.
+            <br><br>
+            Ruby, additionally has a group of looping methods that enable you to loop through each of the elements in a collection. The collection is a group of enumerable elements. <br>
+            These iterators include the 'each' iterator.<br>
+            The syntax for the use of the iterator is ...<br>
+            <code>
+              collection.each do |variable|
+                code
+              end
+            </code>
+
+            In JavaScript, there is no 'each' iterator but with the use of the 'for' you can iterate over a group of elements much like you would if you used the .each iterator method in Ruby.<br><br>
+
+            The functionality of looping constructs in Ruby, 'for ', While', and 'Until', can all be implemented in JavaScript by using JavaScripts for, while and Do..While loops<br><br>
+
+            In JavaScript the for loop has the general syntax...
+            <code>
+              for (var list_pointer ; condition ; increment_value){ code block };
+            </code>
+            The 'var list_pointer', and 'increment_value' are actually optional and can be set elsewhere. this feature makes the 'for' loop in JavaScript very flexible and configurable.
+            Below is an example of this feature
+            <code>
+              
+              myPointer = 0;<br>
+              for (; myPointer <= 20 ;){<br>
+                console.log('Pointer is ' + myPointer)<br>
+                myPointer += 2 //increment by 2<br>
+              };<br>
+
+              equivalent Ruby code using the 'step' iterator<br>
+
+              [0..20].step do |myPointer|<br>
+                puts "Pointer is #{myPointer}"<br>
+              end<br>
+
+            </code>
+            <br><br>
+          </p></article>
+        <article><h2>Post 2</h2>
+        	<p>JavaScript <br>
+
+          </p></article>
+        <article><h2>Ruby Hash vs. JavaScript Object</h2>
+        	<p>Hash objects are useful when you want to store and manipulate pairs or values that are related or associated with each other. <br><br>
+
+          Ruby has a specific hash object that allows you to store key:value pairs where the key can be non-numeric.<br><br>
+
+          JavaScript, doe's not include a specific 'hash' object, only an array object that requires a numbered key, but using JavaScript objects, you can  create an object that behaves like a Ruby hash.<br><br>
+          <br><br>
+
+          A comparison of how these look from a code perspective is below...
+          <code>
+            Creating a new hash<br>
+            'in Ruby'<br>
+            myHash = { one => 'Joe Bloggs', two => 'Tim Smith', three => 'Amy Jones'}<br>
+
+            Accessing a 'hash' value<br>
+            myHash['one'] , returns 'Joe Bloggs'<br>
+            
+            Setting a hash value<br>
+            myHash['three'] = 'Adam Black'<br>
+            
+            Adding a key:value pair<br>
+            myHash['four'] = 'Terry White'<br>
+
+            Deleting a key:value pair<br>
+            myHash['three'].delete //deletes the key 'three' along with its value<br>
+            <br><br>
+
+
+            'in JavaScript'<br>
+            var myHash = {one: 'Joe Bloggs', two: 'Tim Smith', three: 'Amy Jones'};<br>
+
+            Accessing a 'hash' value<br>
+            myHash['one']; , returns 'Joe Bloggs'<br>
+            
+            Setting a hash value<br>
+            myHash['three'] = 'Adam Black';<br>
+            
+            Adding a key:value pair<br>
+            myHash['four'] = 'Terry White'; //Adds the 'key' 'four' and sets it's value to 'Terry White'<br>
+
+            Deleting a key:value pair<br>
+            delete myHash['three']; //deletes the key 'three' along with its value<br>
+
+          </code>
+          <br><br>
+          </p></article>
+      </div>
+    </div>
+
+    <hr>
+
+    <div  id="footer">
+      <hr>
+      <footer>
+        <p>Footer aknowledgments etc.</p>
+      </footer>
+    </div>
+
+  </body>
+
+</html>

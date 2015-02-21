@@ -1,0 +1,143 @@
+/*Applies to entire page elements */
+*{
+  margin: 2px;
+  padding: 2px;
+}
+
+/*
+.logo{
+	float: left; /*position the logo to the far left. Use class as each page has only one of them
+}
+
+.search{
+	float: right; /*position the search text box far-right. Use class as each page has only one of them
+}
+*/
+
+
+      #logo{
+        float:left;
+        margin: 5px;
+      }
+
+      #search{
+        float: right; 
+        border: solid 1px; 
+        background-color: #979995; 
+        width: 20%; 
+        height: 10px; 
+        margin: 5px;
+        padding: 10px;
+        border-top-left-radius: 10px; 
+        border-bottom-right-radius: 10px;
+      }
+
+/* From my other CSS for consistency*/
+      #vertmenu{
+        clear: both;
+        border: 0 solid;
+        width: 100%;
+        position: relative;
+        top: 45%;
+        padding: 3px;
+      }
+
+      #vertmenu_button{
+        padding: 3px;
+        text-align: center;
+        background-color: yellow;
+        border: 1px solid;
+        display: inline-block;
+        width: 13%;
+      }
+      #vertmenu_button:hover{
+        background-color: #979995;
+      }
+      #vertmenu_button_endleft{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 3px;
+        text-align: center;
+        background-color: yellow;
+        border: 1px solid;
+        display: inline-block;
+        width: 13%;
+      }
+      #vertmenu_button_endleft:hover{
+        background-color: #979995;
+      }
+      #vertmenu_button_endright{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 3px;
+        text-align: center;
+        background-color: yellow;
+        border: 1px solid;
+        display: inline-block;
+        width: 13%;
+      }
+      #vertmenu_button_endright:hover{
+        background-color: #979995;
+      }
+
+
+
+/*8888888888888888888888888888888888888888888888888888888888*/
+
+#content{
+	clear: both; /*positioned underneath all elements above. i.e logo, search text box. Use ID as there are many elements that will use the formatting  */
+	border: solid 1px;
+	width: 90%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+/*Have each column occupy the position next to each other and not overlap */
+#column_1{
+	/*position: relative;*/
+	width: 24%;
+	float: left;
+	border-radius: 5px;
+	border: solid 1px;
+}
+
+#column_2{
+	/*position: relative;*/
+	width: 24%;
+	float: left;
+	border-radius: 5px;
+	border: solid 1px;
+}
+
+#column_3{
+	/*position: relative;*/
+	width: 24%;
+	float: left;
+	border-radius: 5px;
+	border: solid 1px;
+}
+
+#column_4{
+	/*position: relative;*/
+	width: 24%;
+	float: left;
+	border-radius: 5px;
+	border: solid 1px;
+}
+
+#cheat{
+
+
+}
+
+code {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*
+p:after{
+ content:"\a";
+ white-space: pre;
+}
+*/

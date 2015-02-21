@@ -87,7 +87,11 @@ article:hover {
         float:top;
       }
 
-      #menu:hover{
+      #sidemenuleft_menuitem{
+
+      }
+
+      #sidemenuleft_menuitem:hover{
         background-color: #979995;
       }
 
@@ -113,10 +117,48 @@ article:hover {
       #vertmenu{
         clear: both;
         border: 0 solid;
-        width: 80%;
+        width: 100%;
         position: relative;
         top: 45%;
         padding: 3px;
+      }
+
+      #vertmenu_button{
+        padding: 3px;
+        text-align: center;
+        background-color: yellow;
+        border: 1px solid;
+        display: inline-block;
+        width: 13%;
+      }
+      #vertmenu_button:hover{
+        background-color: #979995;
+      }
+      #vertmenu_button_endleft{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 3px;
+        text-align: center;
+        background-color: yellow;
+        border: 1px solid;
+        display: inline-block;
+        width: 13%;
+      }
+      #vertmenu_button_endleft:hover{
+        background-color: #979995;
+      }
+      #vertmenu_button_endright{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 3px;
+        text-align: center;
+        background-color: yellow;
+        border: 1px solid;
+        display: inline-block;
+        width: 13%;
+      }
+      #vertmenu_button_endright:hover{
+        background-color: #979995;
       }
 
       #media{

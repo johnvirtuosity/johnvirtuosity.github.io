@@ -95,34 +95,29 @@
 /*Have each column occupy the position next to each other and not overlap */
 #column_1{
 	/*position: relative;*/
-	width: 24%;
+	width: 32%;
 	float: left;
 	border-radius: 5px;
 	border: solid 1px;
+  background-color: #FFD097;
 }
 
 #column_2{
 	/*position: relative;*/
-	width: 24%;
+	width: 32%;
 	float: left;
 	border-radius: 5px;
 	border: solid 1px;
+  background-color: #A3C0C2;
 }
 
 #column_3{
 	/*position: relative;*/
-	width: 24%;
+	width: 32%;
 	float: left;
 	border-radius: 5px;
 	border: solid 1px;
-}
-
-#column_4{
-	/*position: relative;*/
-	width: 24%;
-	float: left;
-	border-radius: 5px;
-	border: solid 1px;
+  background-color: #FFD057;
 }
 
 #cheat{

@@ -74,89 +74,85 @@
 	    			<p><h3>Committing a file/s</h3></p>
 	    			<code>git commit -m "Commit comment."" </code>
 	    			<p>Committing a file/s</p>
-	    		</div>
-	    		
+	    		</div>	    		
 	    	</div>	    	
+	    	
 	    	<div id="column_2">
-	    		<div>
-	    			<p><h2>GitHub</h2></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>R1 C2</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>R2 C2 GitHub</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>R3 C2 Ruby Hashs and Arrays</h3></p>
-	    		</div>
-	    	</div>
-	    	<div id="column_3">
 	    		<div>
 	    			<p><h2>Ruby</h2></p>
 	    		</div>
 	    		<div id="cheat">
-	    			<p><h3>R1 C3 Topic 7</h3></p>
-	    		</div>	
-	    		<div id="cheat">
-	    			<p><h3>topic 8</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>Topic 11</h3></p>
-	    		</div>
-	    		<div id="cheat">
 	    			<p><h3>Ruby Enumerables</h3></p>
-	    		</div>
+	    			<code>inject(initial) { |memo, obj| block } → obj</code>
+	    			<p>(5..10).inject { |sum, n| sum + n }            #=> 45</p>
+	    			<p>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.</p>
+
+
+	    			<code>map { |obj| block } → array</code>
+	    			<p>(1..4).map { |i| i*i }      #=> [1, 4, 9, 16]</p>
+					<p>(1..4).collect { "cat"  }   #=> ["cat", "cat", "cat", "cat"]</p>
+	    			<p>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.</p>
+
+	    			<code>max(n) → obj , max(n) {|a,b| block } → obj</code>
+	    			<p>a = %w[albatross dog horse]</p>
+	    			<p>a.max { |a, b| a.length <=> b.length }  #=> "albatross"</p>
+	    			<p>a.max(2) {|a, b| a.length <=> b.length }  #=> ["albatross", "horse"]</p>
+	    		
+	    			<code>partition { |obj| block } → [ true_array, false_array ]</code>
+	    			<p>(1..6).partition { |v| v.even? }  #=> [[2, 4, 6], [1, 3, 5]]</p>
+	    			<p><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-member-3F">source</a></p>
+	    		</div>	
 	    	</div>	    	
-	    	<div id="column_4">
+	    	<div id="column_3">
 	    		<div>
 	    			<p><h2>Javascript</h2></p>
 	    		</div>
 	    		<div id="cheat">
-	    			<p><h3>R1 C4 Topic 10</h3></p>
+	    			<p><h3>Creating objects</h3></p>
+	    			<code>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code>
+	    			<p>or object literal notation</p>
+	    			<code>var person = {
+						    firstName:"John",
+						    lastName:"Doe",
+						    age:50,
+						    eyeColor:"blue"
+						};</code>
+	    			<p>or using 'new' keyword</p>
+	    			<code>var person = new Object();
+						person.firstName = "John";
+						person.lastName = "Doe";
+						person.age = 50;
+						person.eyeColor = "blue";</code>
 	    		</div>
 	    		<div id="cheat">
-	    			<p><h3>Javascript Objects</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>Javascript prototypes</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>Topic 12</h3></p>
-	    		</div>
-	    		<div>
-	    			<p><h2>CSS</h2></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>CSS Topic 1</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>CSS topic 2</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>CSS topic 3</h3></p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p><h3>CSS topic 4</h3></p>
-	    		</div>
+	    			<p><h3>Using object constructor</h3></p>
+	    			<code>function person(first, last, age, eyecolor) {
+								    this.firstName = first;
+								    this.lastName = last;
+								    this.age = age;
+								    this.eyeColor = eyecolor;
+								}
+							var myFather = new person("John", "Doe", 50, "blue");
+							var myMother = new person("Sally", "Rally", 48, "green");</code>
+					<p>The above function (person) is an object constructor.
 
-	    		<div>
-	    			<p><h2>HTML</h2></p>
+					Once you have an object constructor, you can create new objects of the same type:
+
+					var myFather = new person("John", "Doe", 50, "blue");
+					var myMother = new person("Sally", "Rally", 48, "green");</p>
+					<p>The this Keyword
+						In JavaScript, the thing called this, is the object that "owns" the JavaScript code.
+
+						The value of this, when used in a function, is the object that "owns" the function.
+
+						The value of this, when used in an object, is the object itself.
+
+						The this keyword in an object constructor does not have a value. It is only a substitute for the new object.
+
+						The value of this will become the new object when the constructor is used to create an object.</p>
+					<p><a href="http://www.w3schools.com/js/js_object_prototypes.asp">source</a></p>
 	    		</div>
-	    		<div id="cheat">
-	    			<p>HTML 1</p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p>HTML 2</p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p>HTML 3</p>
-	    		</div>
-	    		<div id="cheat">
-	    			<p>HTML 4</p>
-	    		</div>
-	    	</div>
-	    	
+	    	</div>	    	
 	    </div>
 	</body>
 </HTML>

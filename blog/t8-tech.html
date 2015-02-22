@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+
+  <HEAD>
+    <title>Blog Template</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+      
+  </HEAD>
+
+  <body>
+    <div>
+      <div id="logo">
+          <img src="http://www.virtuositynz.com/assets/images/virtuosity/virtuosityAlive.gif"/>
+        </div>
+
+        <div id="search">
+          <p>Search goes here</p>
+       </div>
+    </div>
+
+
+    <div id="content">
+      <hr>
+      <div id="left-sidebar">
+        <div id="menu">
+          <h2>Other Blogs</h2>
+          <ol>
+          	<li>Music</li>
+          	<li>Sports</li>
+          	<li>People</li>
+          </ol>
+        </div>
+        <div id="media">
+          <p>social media links here...</p>
+        </div>        
+      </div>
+      <div id="posts">
+        <p>Post</p>
+        <article><h2>NoSQL databases</h2>
+        	<p>Traditionally databases were imagined as ordered rows of columns of pigeon-holes with each pigeon-hole contains a piece of data.</p>
+          <p>One class of database, the Relational database, stores their data in a very structured way, whereby each 'record' could be represented as a row in a spread-sheet and each column represents a specified piece of data, like a phone number or a name etc.</p>
+          <p>A relational database when 'properly' structured would consist of a number of tables which would have a column, or columns, that would contain the id that could be cross-referenced with other tables that store information for a single entity. This process of structuring and relating these tables, for the most part are to provide efficiency of the storage of data, as well as to provide efficiency when 'querying' the database to for the data you want to update, or just read.</p>
+          <p>The relational database model, is highly structured. If we use the spread-sheet comparison, each record which relates to a spreadsheet row, must consist of the same number of columns as each other record in the same spread-sheet. Because the relational database is so highly structured any change's like columns being added, have a impact on every record in the table the column needs to be added to. You can't have a row in a table in a relational database that has a different number of columns, more or less, than another record in the same table.</p>
+          <p>An NoSQL, 'Not only SQL', database takes a different, less structured approach to the storage of data.</p>
+          <p>There are various classes of NoSQL database, these include key-value, column, document, graph</p>
+          <p>Key-value databases, are like hashes, where a key is paired with a value, so if you want to find out the value for something you search for the key and return the associated value.</p>
+          <p>Column databases, are an extension of the key-value model and may be viewed more like 2 dimensional hashes, where each hash represents a record and collections of hashes make up the equivalent of a table. One key benefit of this model is that a record can have quite different key's from other records in the same collection. This is fundamentally different from the very structured relational table model of a relational database where each table record will have the same columns.</p>
+          <p>Document databases, use collections of 'documents', which could be regarded as objects from Ruby, whereby a document groups together the data for an entity, in the same way an object will group together attributes for an instance of that object. Each document, record, in a collection can have differing numbers and type of attributes. This provides a great flexibility in the design and maintenance of a database and is one of the big differentiators between, NoSQL and traditonal Relational databases.</p>
+
+          <p>Object-oriented (document) databases can be well compared against SQL database's for commercial purposes, as they offer all of the same features of the traditional Relational databases along with the flexibility that NoSQL database's provide when change's are required to structure.</p>
+
+          <p>Here is a simple example of what querying of an object-oriented database would look like. Note the dot notation that may be familiar from a Ruby object perspective. The example looks for all cars where the manufacturer attribute is 'Germany"</p>
+          <code>
+            SELECT car 
+              FROM car IN Cars 
+              WHERE car.car_manufacturer.country = "Germany"
+          </code>
+          <p>Here is what a corresponding query of an SQL database would look like. The example looks for all cars where the manufacturer attribute is 'Germany"</p>
+          <code>
+            SELECT *  
+              FROM Cars 
+              WHERE country = "Germany"
+          </code>
+
+          <p>NZ has produced a very commercially competitive Object-Oriented DBMS called Jade.</p>
+        </article>
+        
+      </div>
+    </div>
+
+    <hr>
+
+    <div  id="footer">
+      <hr>
+      <footer>
+        <p>Footer aknowledgments etc.</p>
+      </footer>
+    </div>
+
+  </body>
+
+</html>

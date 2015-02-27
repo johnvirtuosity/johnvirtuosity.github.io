@@ -1,0 +1,47 @@
+* {
+	font-family: 'verdana', 'helvetica';	
+}
+
+div#main {
+	width: 60%;
+	height: 80%;
+	border: solid 1px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#listheader {
+	border: solid 1px;
+	border-radius: 5px;
+	width: 60%;	
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#list {
+	border: solid 1px;
+	border-radius: 5px;
+	/*font-weight: bold;*/
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#itemtoadd {
+	width: 60%;
+	font-weight: bold;
+}
+
+#qty {
+	width: 20%;
+	text-align: center;
+	font-weight: bold;
+}
+
+#addButton {
+	width: 100%;
+	height: 30px;
+	border-radius: 10px;
+};
